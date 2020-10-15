@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    th{
+        border:1px solid black;
+    
+    }
+    td
+    {
+        border:1px solid black;
+    };
+</style>
+<body>
+    
+    <table style="border: 3mm ridge grey">
+        <form action="" method="GET">
+        <tr>
+            <th>Name</th> <th> Value </th>
+        <tr>
+        <tr>
+            <td>Name</td><td><input type="textarea"> </td>
+        </tr>
+        <tr>
+            <td rowspan="2">Sex</td>
+            <td><input type="radio" name="Male" >Male</td></tr>
+        <tr>
+            <td><input type="radio" name="Fenale" >Female</td>
+        </tr>
+        <tr>
+            <td>Eye color</td>
+            <td><select name="eyes">
+            <option value="g">green</option>
+            <option value="bl">blue</option>
+            <option value="br">brown</option>
+            <option value="n">none</option></select></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Check all that apply</td>
+        
+        
+            <td><input type="checkbox">Over 6 feet tall</td>
+        <tr>
+            <td><input type="checkbox">Over 200 pounds</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </form>
+    </table>
+</body>
+</html>
