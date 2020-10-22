@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    th{
+        border:1px solid black;
+    
+    }
+    td
+    {
+        border:1px solid black;
+    };
+</style>
+<body>
+    
+    <table style="border: 3mm ridge grey">
+        <form action="tabelka.php" method="GET">
+        <tr>
+            <th>Name</th> <th> Value </th>
+        <tr>
+        <tr>
+            <td>Name</td><td><input type="textarea" name='name'> </td>
+        </tr>
+        <tr>
+            <td rowspan="2">Sex</td>
+            <td><input type="radio" value="M" name="plec"  >Male</td></tr>
+        <tr>
+            <td><input type="radio" value='F'name="plec" checked  >Female</td>
+        </tr>
+        <tr>
+            <td>Eye color</td>
+            <td><select name="eyes">
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="brown">brown</option>
+            <option value="none">none</option></select></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Check all that apply</td>
+        
+        
+            <td><input type="checkbox" name="6feet">Over 6 feet tall</td>
+        <tr>
+            <td><input type="checkbox" name="200p">Over 200 pounds</td>
+        </tr>
+      
+    
+    </table><br>
+    <input type="submit" value="Send data">
+</form>
+
+</body>
+</html>
